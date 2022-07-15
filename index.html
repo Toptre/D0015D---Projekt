@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--1. Det här är dokumentets titel som jag valt att döpa till den plats på hemsidan som man befinner sig på samt företagetsnamn-->
+        <title>Hem - Webbyrån AB</title>
+        <!-- Kopplingen till css filen som stylar html kodens element-->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Kopplingen fonten som är genomgående för hemsidan-->
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+
+    </head>
+    <!--Genomgående använder jag div elementet endast för referens till css dokument. Jag tycker att det lämpligare att kommentera cssn än html koden då det kan bli repetativt
+    jag kommer kommentera alla nya element som används per sida och de div elementen som jag känner behöver lite mer förklaring-->
+    <!--body element som grundpelare för mitt html innehåll. samt att detta element sätter centrering och maxbredd för hemsidan-->
+    <body>
+      <!---->
+      <div class="logo-container">
+        <a href="index.html">
+        <img src="Img/WebbyranAB.png" alt="WebbyranAB logga">
+        </a>
+      </div>
+
+        <div class="navbar">
+            <!-- Länk till respektive site för hemsidan-->
+            <a href="index.html" class="selected">Hem</a>
+            <a href="tjanster.html">Tjänster</a>
+            <a href="portfolio.html">Portfolio</a>
+            
+            <div class="dropdown">
+              <!--button element används för att kunna få till en snygg dropdown-->
+              
+              <button class="dropbtn">
+                Om oss
+              </button>
+              <div class="dropdown-content">
+                <a href="om.html">Vilka är vi?</a>
+                <a href="karriar.html">Karriär</a>
+              </div>
+            </div>
+            <a href="kontakt.html">Kontakta oss</a>
+        </div>
+
+        <div class="home-center">
+          <!--Startside bild-->
+          <img src="Img/imgindex.jpg" class="img-responsive" alt="fokuserad dator med programering på ">
+          <!--Startside rubrik-->
+          <h1>Din enda webbyrå...</h1>
+          <!--Startside text-->
+          <p>Vare sig om du är en egenföretagare eller tillhör en multinationell verksamhet, så finns vi här för dig. Vi har lösningar som hjälper dig eller din verksamhet att ta första steget ut på webben och lösningar för att utveckla er verksamhet.
+            Vårat mål är att a de nöjdaste kunderna, det uppnår vi genom att ha hög tillgänglighet, marknadskaftiga priser och extremt snabba leveranstider.
+          </p>
+        </div>
+
+        
+    </body>
+</html>

@@ -1,0 +1,179 @@
+
+
+/*Sätter färg och typsnitt för menyn*/
+.navbar {
+    overflow: hidden; /*ser till att menyn blir 1 rad*/
+    background-color: #6C757D;
+    font-family: "Comfortaa",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  }
+  
+  /* storlek, färg placering sav länk-texterna för menyn */
+  .navbar a {
+    float: left;
+    font-size: 1em;
+    color: #F8F9FA;
+    text-align: center;
+    padding: 0.875em 1em;
+    text-decoration: none;
+  }
+  
+  /* strukturen för dropdownen */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* droppdown knappen */
+  .dropdown .dropbtn {
+    font-family: "Comfortaa",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    font-size: 1em;
+    border: none;
+    outline: none;
+    color: #F8F9FA;
+    padding: 0.875em 1em;
+    background-color: inherit;
+
+  }
+  
+  /* när menyn hoovras ändras texten till mörkgrå */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    color: #212529;
+  }
+
+  /* när man på den sidan av menyn som knappen motsvarar sidan ska texten behålla mörkgrå färg  */
+  .navbar .selected {
+    color: #212529;
+  }
+
+ 
+  
+  /* dolda dropdownen, när man sedan hovara så ska display bli block */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #6C757D;
+    color: #F8F9FA;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1; /*säger att det ska vara ett snäpp under*/
+  }
+
+
+  
+  /* länkarna i dropdownen */
+  .dropdown-content a {
+    float: none;
+    color: #F8F9FA;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* samma egenskap med textfärg vid hovring fast för länkarna i dropdownen*/
+  .dropdown-content a:hover {
+    color: #212529;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /*ser till att de stora bilderna är responsiva*/
+  .img-responsive {
+    width: 100%;
+    height: auto;
+  }
+ /*sättter max bredd samt "default" typsnitt och textfärg*/
+  body {
+      max-width: 1200px;
+      margin: auto;
+      display: block;
+      font-family: "Comfortaa",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+      color: #212529;
+      
+  }
+  /*flexbox egenskaper, kolumn ordningm samt centrerat*/
+  .home-center {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      column-gap: 0.5em;
+      
+  }
+
+  /* bakgrundsfärg för ytan bakom loggan */
+  .logo-container {
+    
+    background-color: #ADB5BD;
+  }
+  .services-container {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+  }
+
+  .row-text-container{
+    display: flex;
+    background-color: #DEE2E6;
+    flex:2;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+ 
+  }
+  
+  .row-text-container p{
+    
+    margin-inline-end: 1em;
+    margin-inline-start: 1em;    
+  }
+
+  .odd-row{
+    display: flex;
+    flex-direction: row;
+    margin-top: 6px;
+    gap: 6px;
+    
+  }
+  .row-img {
+    flex: 1;
+    max-height: 250px; 
+    overflow: auto;
+    
+  }
+
+  .even-row {
+    display: flex;
+    flex-direction:row-reverse;
+    margin-top: 6px;
+    gap: 6px;
+  }
+
+  .card{
+    display: flex;
+    flex-direction:column;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .card a {
+    color: #212529;
+    text-decoration: none;
+    text-align: center;
+  }
+  .card img {
+    width: 100%;
+  }
+
+  .contact-box{
+    background-color: #ADB5BD;
+    text-align: center;
+    margin-top: 6px;
+    width: 100%;
+  }
